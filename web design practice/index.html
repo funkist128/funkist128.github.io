@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!--  jQuery 1.7+  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		
+		<!-- slideshow -->
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="taichung.jpg" style="width:100%; height:500px">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="taitung.jpg" style="width:100%; height:500px">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="hualian.jpg" style="width:100%; height:500px">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<!-- End of Slide Show  -->
+
+
+		<div class="nav">
+			<ul>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li style="float: right"><a href="#">SignIn</a></li>
+			</ul>
+		</div>
+
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- The Close Button -->
+			<span class="close" onclick="document.getElementById("myModal").style.display='none'">&times;</span>
+
+			<img id="img01" class="modal-content">
+			<div id="caption"></div>
+		</div>
+		<!-- End of Modal -->
+
+
+		<div class="spot_block">
+
+			<div class="spot_box">
+				<h3>Latest Spot</h3>
+				<img class="myImg spot_img" src="blue_tear.jpg" alt="Blue Tear">
+				<P>Blue Tear</P>
+			</div>
+			<div class="spot_box">
+				<h3>Hottest Spot</h3>
+				<img class="myImg spot_img" src="taitung.jpg" alt="Taitung">
+				<p>Taitung</p>
+			</div>
+
+			<table>
+				<tr>
+					<td colspan="3"><h2>Hot Rank</h2></td>
+				</tr>
+				<tr>
+					<td height="100px" width = "10%">1</td>
+					<td width = "10%"><img class="myImg" style="height: 80px; width: 80px;" src="blue_tear.jpg"></td>
+					<td width = "80%">Blue Tear</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><img style="height: 50px; width: 50px;" src="taitung.jpg"></td>
+					<td>Taitung</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td><img style="height: 50px; width: 50px;" src="taichung.jpg"></td>
+					<td>Taichung</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><img style="height: 50px; width: 50px;" src="taipei.jpg"></td>
+					<td>Taipei</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td><img style="height: 50px; width: 50px;" src="hualian.jpg"></td>
+					<td>Hualian</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="recommend">
+			<h2>Recommend</h2>
+			<div class="recommend_box">
+				<h3>Taipei</h3>
+				<img width="300px" height="300px" src="taipei.jpg">
+				<p>Taipei, officially known as Taipei City, is the capital city and a special municipality of the Republic of China, commonly known as Taiwan. Sitting at the northern tip of the state, Taipei City is an enclave of the municipality of New Taipei City. It is about 25 km (16 mi) southwest of the northern port city Keelung. Most of the city is located on the Taipei Basin, an ancient lakebed bounded by the two relatively narrow valleys of the Keelung and Xindian rivers, which join to form the Tamsui River along the city's western border.</p>
+			</div>
+			<div class="recommend_box">
+				<h3>Tainan</h3>
+				<img width="300px" height="300px" src="tainan.jpg">
+				<p> Tainan is the oldest city in Taiwan and also commonly known as the "Capital City"  for its over 200 years of history as the capital of Taiwan under Koxinga and later Qing dynasty rule. Tainan's complex history of comebacks, redefinitions and renewals inspired its popular nickname "the Phoenix City"</p>
+			</div>
+			<div class="recommend_box">
+				<h3>Yilan</h3>
+				<img width="300px" height="300px" src="Yilan.jpg">
+				<p> Yilan International Children's Folklore and Folkgame Festival, “A dreamland for the children of Taiwan, a magnet for art from around the world, a garden of culture for the people of Ilan.” Seven years ago, these were the concepts that launched the first ICFFF, and over the years the people of Yilan have been making it happen step by step. Of all Taiwan’s folk festivals, the ICFFF is probably the best known internationally.</p>
+			</div>
+
+
+		</div>
+		
+		
+	</div>
+
+
+
+
+</body>
+</html>
